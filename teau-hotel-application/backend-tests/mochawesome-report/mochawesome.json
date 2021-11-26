@@ -1,0 +1,176 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-11-26T07:50:08.910Z",
+    "end": "2021-11-26T07:50:12.148Z",
+    "duration": 3238,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "93b61462-9c8f-4ca1-be87-40bde52bf009",
+      "title": "",
+      "fullFile": "cypress/integration/backend-test.spec.js",
+      "file": "cypress/integration/backend-test.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "566e302e-4762-4947-8ca1-536abc9ff796",
+          "title": "Backend test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "T1: Logs in and then out",
+              "fullTitle": "Backend test suite T1: Logs in and then out",
+              "timedOut": null,
+              "duration": 602,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.authenticateSession();\ncy.endSession();",
+              "err": {},
+              "uuid": "09db5448-096e-4a3b-86d0-0a5a40746603",
+              "parentUUID": "566e302e-4762-4947-8ca1-536abc9ff796",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "T2: Create and deletes a client",
+              "fullTitle": "Backend test suite T2: Create and deletes a client",
+              "timedOut": null,
+              "duration": 675,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "clientHelpers.createAndDeleteClient(cy);",
+              "err": {},
+              "uuid": "8b0ae697-21b8-4e32-bee4-739674766ec6",
+              "parentUUID": "566e302e-4762-4947-8ca1-536abc9ff796",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "T3: Create,update and delete a client",
+              "fullTitle": "Backend test suite T3: Create,update and delete a client",
+              "timedOut": null,
+              "duration": 597,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "clientHelpers.createEditDeleteClient(cy);",
+              "err": {},
+              "uuid": "5bc70c08-c7b5-41d9-b092-9840aa01b37b",
+              "parentUUID": "566e302e-4762-4947-8ca1-536abc9ff796",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "T4: Create and delete room",
+              "fullTitle": "Backend test suite T4: Create and delete room",
+              "timedOut": null,
+              "duration": 590,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "roomHelpers.createAndDeleteRoom(cy);",
+              "err": {},
+              "uuid": "30983df7-e355-4ab6-8a46-d84997c10677",
+              "parentUUID": "566e302e-4762-4947-8ca1-536abc9ff796",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "T5: Create, edit and delete room",
+              "fullTitle": "Backend test suite T5: Create, edit and delete room",
+              "timedOut": null,
+              "duration": 712,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "roomHelpers.createEditAndDeleteRoom(cy);",
+              "err": {},
+              "uuid": "6abb4cc6-eaa8-4d91-a49d-06d3e9535ed6",
+              "parentUUID": "566e302e-4762-4947-8ca1-536abc9ff796",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "09db5448-096e-4a3b-86d0-0a5a40746603",
+            "8b0ae697-21b8-4e32-bee4-739674766ec6",
+            "5bc70c08-c7b5-41d9-b092-9840aa01b37b",
+            "30983df7-e355-4ab6-8a46-d84997c10677",
+            "6abb4cc6-eaa8-4d91-a49d-06d3e9535ed6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3176,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.0.1"
+    }
+  }
+}
